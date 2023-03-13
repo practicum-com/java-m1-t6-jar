@@ -12,7 +12,7 @@ public class Practicum {
 
             int command = scanner.nextInt();
             if (command == 0) {
-                System.out.println("Выход.");
+                System.out.println("Exit.");
                 break;
             } else if (command == 1) {
                 library.addBook();
@@ -21,17 +21,17 @@ public class Practicum {
             } else if (command == 3) {
                 library.printAll();
             } else {
-                System.out.println("Извините, такой команды пока нет.");
+                System.out.println("Sorry, there is no such command yet.");
             }
         }
     }
 
     public static void printMenu() {
-        System.out.println("Что вы хотите сделать? ");
-        System.out.println("1 - Добавить книгу.");
-        System.out.println("2 - Найти книги автора.");
-        System.out.println("3 - Увидеть список книг.");
-        System.out.println("0 - Выход.");
+        System.out.println("What would you like to do? ");
+        System.out.println("1 — Add the book.");
+        System.out.println("2 — Find the books of an author.");
+        System.out.println("3 — See the list of books.");
+        System.out.println("0 - Exit.");
     }
 
 }
