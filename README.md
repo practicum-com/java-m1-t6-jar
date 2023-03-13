@@ -1,1 +1,1 @@
-# Приложение по учёту книг.
+# The application for the record of books.
