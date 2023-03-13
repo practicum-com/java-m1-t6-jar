@@ -12,20 +12,20 @@ public class Library {
     }
 
     public void addBook() {
-        System.out.println("Введите название книги:");
+        System.out.println("Enter the book name:");
         String name = scanner.nextLine();
 
-        System.out.println("Введите автора книги:");
+        System.out.println("Enter the book's author:");
         String author = scanner.nextLine();
 
-        System.out.println("Введите год издания:");
+        System.out.println("Enter the year of printing:");
         int year = scanner.nextInt();
 
         bookList.add(new Book(name, author, year));
     }
 
     public void findByAuthor() {
-        System.out.println("Введите автора:");
+        System.out.println("Enter the book's author:");
         String author = scanner.nextLine();
 
         for (Book book : bookList) {
@@ -36,7 +36,7 @@ public class Library {
     }
 
     public void printAll() {
-        System.out.println("Всего найдено: " + bookList.size() + " книг.");
+        System.out.println("A total of " + bookList.size() + " books found.");
         for (Book book : bookList) {
             System.out.println(book.getAuthor() + " " + book.getTitle() + ", " + book.getYear());
         }
